@@ -1,0 +1,6 @@
+.git
+.nuxt
+tmp
+log
+README.md
+node_modules
