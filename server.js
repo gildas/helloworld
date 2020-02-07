@@ -1,6 +1,9 @@
 const app = require('express')();
 
-app.get('/', (req, res) => { res.send('<html><body><h1>Hello World!</h1></body></html>'); });
+app.get('/', (req, res) => {
+  console.log(`Request: ${req.method} ${req.url}`);
+  res.send('<html><body><h1>Hello World!</h1></body></html>');
+});
 
 const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`Web server listening on PORT ${server.address().port}`);
