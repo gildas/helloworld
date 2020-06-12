@@ -6,7 +6,6 @@ replicaCount: 2
 
 image:
   repository: gildas/helloworld
-  tag: 5.0.0
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
