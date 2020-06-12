@@ -14,4 +14,10 @@ spec:
         exact: /
     route:
     - destination:
-        host: helloworld
+        subset: blue
+        host:   helloworld
+      weight: 50
+    - destination:
+        subset: green
+        host:   helloworld
+      weight: 50

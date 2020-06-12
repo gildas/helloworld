@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  annotations:
+  name: helloworld
+  namespace: helloworld
+spec:
+  host: helloworld
+  subsets:
+  - name: blue
+    labels:
+      version: 2.0.0
+  - name: green
+    labels:
+      version: 5.0.0
