@@ -33,7 +33,7 @@ securityContext: {}
 
 service:
   enabled: true
-  type: LoadBalancer
+  type: ClusterIP
   port: 80
   targetPort: 3000
 
