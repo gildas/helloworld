@@ -19,5 +19,4 @@ spec:
   selector:
     app: {{ include "helloworld.name" . }}
     app.kubernetes.io/name: {{ include "helloworld.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
